@@ -35,7 +35,8 @@ public class ProductController {
     @PutMapping("/edit/{id}")
    // @ApiOperation(value = "Update  product details with product id ")
     public ResponseEntity<String> updateProduct(@PathVariable("id") int id, @RequestBody UpdateProduct updateProduct){
-        productService.updateProduct(id, updateProduct.name(),
+        productService.updateProduct(id,
+                updateProduct.name(),
                 updateProduct.description(),
                 updateProduct.price());
 
