@@ -9,6 +9,8 @@ import java.math.BigDecimal;
 @Table(name = "products")
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Product {
     @Id
     @SequenceGenerator(
