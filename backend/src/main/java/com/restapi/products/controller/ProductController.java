@@ -22,7 +22,6 @@ import java.util.List;
 @Slf4j
 @Tag(name = "Product Operations", description = "Product Management APIS")
 public class ProductController {
-    @Autowired
     private final ProductService productService;
 
     @GetMapping("")
